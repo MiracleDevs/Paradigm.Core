@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Copyright>Miracle Devs</Copyright>
+    <PackageProjectUrl>http://www.miracledevs.com</PackageProjectUrl>
+    <Description>This library helps with logging tasks.</Description>
+  </PropertyGroup>
+
+</Project>

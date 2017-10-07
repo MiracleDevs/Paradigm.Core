@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Wrapper around dependency injection libraries. The library allows to change DI containers without affecting the code.</Description>
+    <Copyright>Miracle Devs</Copyright>
+    <PackageProjectUrl>http://www.miracledevs.com</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.6.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="1.1.1" />
+  </ItemGroup>
+
+</Project>

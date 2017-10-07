@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Common method extensions used by the Paradigm Framework.</Description>
+    <Copyright>Miracle Devs</Copyright>
+    <PackageProjectUrl>http://www.miracledevs.com</PackageProjectUrl>
+  </PropertyGroup>
+
+</Project>
