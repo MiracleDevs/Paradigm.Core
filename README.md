@@ -13,3 +13,13 @@
 
 # Paradigm.Core
 Set of core libraries used by the paradigm framework in .net core.
+
+Change log
+---
+Version `1.0.1`
+- Updated nuget package configuration.
+- Fixed wrong project version to 1.6.
+
+Version `1.0.0`
+- Uploaded first version of the Paradigm Core.
+

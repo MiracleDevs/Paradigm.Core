@@ -6,6 +6,14 @@
     <Description>Wrapper around dependency injection libraries. The library allows to change DI containers without affecting the code.</Description>
     <Copyright>Miracle Devs</Copyright>
     <PackageProjectUrl>http://www.miracledevs.com</PackageProjectUrl>
+    <Authors>Miracle Devs</Authors>
+    <Company>Miracle Devs</Company>
+    <PackageLicenseUrl>https://github.com/MiracleDevs/Paradigm.Core/blob/master/LICENSE</PackageLicenseUrl>
+    <Product>Paradigm Framework</Product>
+    <RepositoryUrl>https://github.com/MiracleDevs/Paradigm.Core.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageIconUrl>https://avatars2.githubusercontent.com/u/8192926</PackageIconUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
