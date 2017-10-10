@@ -16,6 +16,10 @@ Set of core libraries used by the paradigm framework in .net core.
 
 Change log
 ---
+
+Version `2.0.0`
+- Updated .net core from version 1 to version 2.
+
 Version `1.0.1`
 - Updated nuget package configuration.
 - Fixed wrong project version to 1.6.
