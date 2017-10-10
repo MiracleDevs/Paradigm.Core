@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.6</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>Wrapper around dependency injection libraries. The library allows to change DI containers without affecting the code.</Description>
     <Copyright>Miracle Devs</Copyright>
@@ -13,7 +13,7 @@
     <RepositoryUrl>https://github.com/MiracleDevs/Paradigm.Core.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageIconUrl>https://avatars2.githubusercontent.com/u/8192926</PackageIconUrl>
-    <Version>1.0.1</Version>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>

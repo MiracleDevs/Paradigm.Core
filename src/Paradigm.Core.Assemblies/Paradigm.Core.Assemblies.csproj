@@ -1,13 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.6</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>Contains classes to work with assemblies. Mainly load assemblies from a specific folder, global nuget packages or other places.</Description>
     <Copyright>Miracle Devs</Copyright>
     <PackageProjectUrl>http://www.miracledevs.com</PackageProjectUrl>
     <Authors>Miracle Devs</Authors>
-    <Version>1.0.1</Version>
+    <Version>2.0.0</Version>
     <PackageLicenseUrl>https://github.com/MiracleDevs/Paradigm.Core/blob/master/LICENSE</PackageLicenseUrl>
     <Product>Paradigm Framework</Product>
     <RepositoryUrl>https://github.com/MiracleDevs/Paradigm.Core.git</RepositoryUrl>
