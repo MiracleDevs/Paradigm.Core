@@ -17,6 +17,12 @@ Set of core libraries used by the paradigm framework in .net core.
 Change log
 ---
 
+Version `2.0.1`
+- Updated nuget dependencies.
+- Added new logging types:
+  - ConsoleLogging: Allows to set the foreground and background colors.
+  - CombineLogging: Allows to combine multiple loggers.
+
 Version `2.0.0`
 - Updated .net core from version 1 to version 2.
 

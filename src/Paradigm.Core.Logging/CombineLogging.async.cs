@@ -12,7 +12,7 @@ namespace Paradigm.Core.Logging
     /// Provides application logging functionality storing the logs in the file system.
     /// </summary>
     /// <seealso cref="ILogging" />
-    public partial class FileLogging
+    public partial class CombineLogging
     {
         #region Public Methods
 
@@ -23,11 +23,13 @@ namespace Paradigm.Core.Logging
         /// <param name="message">The message.</param>
         /// <param name="type">The type.</param>
         /// <param name="tag">A custom tag value provided by the user.</param>
-        /// <exception cref="T:System.Exception"></exception>
-        public override Task LogAsync(string message, LogType type = LogType.Trace, string tag = null)
+        /// <exception cref="T:System.NotImplementedException"></exception>
+        public override async Task LogAsync(string message, LogType type = LogType.Trace, string tag = null)
         {
-            this.Log(message, type, tag);
-            return Task.FromResult(new object()); 
+            foreach (var logger in this.Loggers)
+            {
+                await logger.LogAsync(message, type, tag);
+            }
         }
 
         #endregion
