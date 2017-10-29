@@ -17,6 +17,20 @@ Set of core libraries used by the paradigm framework in .net core.
 Change log
 ---
 
+Version `2.0.2`
+- Improved loggers code.
+- Added three new static methods to `FileLogging` to create typed loggers:
+  - `FileLogging.CreateCsv`
+  - `FileLogging.CreateJson`
+  - `FileLogging.CreateXml`
+
+  Take in mind that at least for now, Json and Xml files won't be closed correctly,
+  due to the logger not knowing when will be the last writing, and to prevent costly
+  file write/read operations. So it  will depend on you to close it before using them.
+- Added tests for all type of loggers.
+- Added new methods to `CombineLogging` to spread changes among its loggers.
+- Updated nuget dependencies.
+
 Version `2.0.1`
 - Updated nuget dependencies.
 - Added new logging types:
