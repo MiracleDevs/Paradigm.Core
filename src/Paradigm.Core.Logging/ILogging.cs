@@ -4,6 +4,8 @@
  * Licensed under MIT (https://github.com/MiracleDevs/Paradigm.Core/blob/master/LICENSE)
  */
 
+using System;
+
 namespace Paradigm.Core.Logging
 {
     public partial interface ILogging
@@ -24,6 +26,12 @@ namespace Paradigm.Core.Logging
         void SetCustomMessage(LogType type, string message);
 
         /// <summary>
+        /// Sets a custom format provider.
+        /// </summary>
+        /// <param name="formatProvider">The format provider.</param>
+        void SetCustomFormatProvider(IFormatProvider formatProvider);
+
+        /// <summary>
         /// Sets the minimum log level.
         /// </summary>
         /// <param name="type">The type.</param>
@@ -36,6 +44,5 @@ namespace Paradigm.Core.Logging
         /// <param name="type">The type.</param>
         /// <param name="tag">A custom tag value provided by the user.</param>
         void Log(string message, LogType type = LogType.Trace, string tag = null);
-
     }
 }

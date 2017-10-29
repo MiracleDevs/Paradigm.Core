@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="4.19.4" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0-preview-20170628-02" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.1.18" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.1.18" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Paradigm.Core.Assemblies\Paradigm.Core.Assemblies.csproj" />
+    <ProjectReference Include="..\Paradigm.Core.DependencyInjection\Paradigm.Core.DependencyInjection.csproj" />
+    <ProjectReference Include="..\Paradigm.Core.Extensions\Paradigm.Core.Extensions.csproj" />
+    <ProjectReference Include="..\Paradigm.Core.Logging\Paradigm.Core.Logging.csproj" />
+    <ProjectReference Include="..\Paradigm.Core.Mapping\Paradigm.Core.Mapping.csproj" />
+  </ItemGroup>
+
+</Project>

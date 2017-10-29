@@ -29,6 +29,14 @@ namespace Paradigm.Core.Logging
         protected Dictionary<LogType, string> Messages { get; }
 
         /// <summary>
+        /// Gets the format provider.
+        /// </summary>
+        /// <value>
+        /// The format provider.
+        /// </value>
+        protected IFormatProvider FormatProvider { get; private set; }
+
+        /// <summary>
         /// Gets or sets the minimum level.
         /// </summary>
         /// <value>
@@ -45,7 +53,7 @@ namespace Paradigm.Core.Logging
         /// </summary>
         protected LoggingBase()
         {
-            const string message = "[{0:MM/dd/yyyy hh:mm:ss}][{1}] - {3}{2}\n";
+            const string message = "[{0:MM/dd/yyyy hh:mm:ss.fff}][{1}] - {3}{2}\n";
 
             this.Messages = new Dictionary<LogType, string>()
             {
@@ -79,12 +87,22 @@ namespace Paradigm.Core.Logging
         /// {2}: A custom tag value provided by the user.
         /// {3}: The log message.
         /// </remarks>
-        public void SetCustomMessage(LogType type, string message)
+        public virtual void SetCustomMessage(LogType type, string message)
         {
             if (!this.Messages.ContainsKey(type))
                 throw new Exception(TypeNotRecognized);
 
-            this.Messages[type] = message;
+            this.Messages[type] = message ?? throw new Exception("Message can not be null");
+        }
+
+        /// <summary>
+        /// Sets a custom format provider.
+        /// </summary>
+        /// <param name="formatProvider">The format provider.</param>
+        /// <exception cref="NotImplementedException"></exception>
+        public virtual void SetCustomFormatProvider(IFormatProvider formatProvider)
+        {
+            this.FormatProvider = formatProvider;
         }
 
         /// <inheritdoc />
@@ -93,7 +111,7 @@ namespace Paradigm.Core.Logging
         /// </summary>
         /// <param name="type">The type.</param>
         /// <exception cref="T:System.Exception"></exception>
-        public void SetMinimumLevel(LogType type)
+        public virtual void SetMinimumLevel(LogType type)
         {
             if (!this.Messages.ContainsKey(type))
                 throw new Exception(TypeNotRecognized);

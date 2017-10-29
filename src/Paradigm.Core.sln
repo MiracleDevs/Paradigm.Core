@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paradigm.Core.Assemblies", "Paradigm.Core.Assemblies\Paradigm.Core.Assemblies.csproj", "{7D6904A1-9EA7-4B32-97EE-EF34E4001DC0}"
 EndProject
@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paradigm.Core.Logging", "Pa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paradigm.Core.Mapping", "Paradigm.Core.Mapping\Paradigm.Core.Mapping.csproj", "{4DE03DBA-CF90-4635-BC06-65CE0D779039}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paradigm.Core.DependencyInjection", "Paradigm.Core.DependencyInjection\Paradigm.Core.DependencyInjection.csproj", "{F2E77956-12CE-4DCC-920C-430FDE488EF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paradigm.Core.DependencyInjection", "Paradigm.Core.DependencyInjection\Paradigm.Core.DependencyInjection.csproj", "{F2E77956-12CE-4DCC-920C-430FDE488EF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paradigm.Core.Extensions", "Paradigm.Core.Extensions\Paradigm.Core.Extensions.csproj", "{A69C07C0-67FA-419B-961B-B14CD6AFDF50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paradigm.Core.Extensions", "Paradigm.Core.Extensions\Paradigm.Core.Extensions.csproj", "{A69C07C0-67FA-419B-961B-B14CD6AFDF50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paradigm.Core.Tests", "Paradigm.Core.Tests\Paradigm.Core.Tests.csproj", "{07428424-C14B-4CDA-9C87-AE163AEE6B2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A69C07C0-67FA-419B-961B-B14CD6AFDF50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A69C07C0-67FA-419B-961B-B14CD6AFDF50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A69C07C0-67FA-419B-961B-B14CD6AFDF50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07428424-C14B-4CDA-9C87-AE163AEE6B2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07428424-C14B-4CDA-9C87-AE163AEE6B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07428424-C14B-4CDA-9C87-AE163AEE6B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07428424-C14B-4CDA-9C87-AE163AEE6B2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
