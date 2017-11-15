@@ -21,5 +21,7 @@ namespace Paradigm.Core.Mapping.Interfaces
         IMemberConfiguration<TSource, TDestination> Membmer<TMember>(Expression<Func<TDestination, TMember>> destinationMember, Expression<Func<TSource, TMember>> sourceMember);
 
         IMemberConfiguration<TSource, TDestination> Function<TMember>(Expression<Func<TDestination, TMember>> destinationMember, Expression<Func<TSource, TMember>> sourceMember);
+
+        IMemberConfiguration<TSource, TDestination> ConstructUsing(Func<TSource, TDestination> constructor);
     }
 }
