@@ -38,7 +38,7 @@ namespace Paradigm.Core.Tests.Logging
         public void ShouldntAddNullLoggers()
         {
             var logger = new CombineLogging();
-            logger.Invoking(x => x.AddLogger(null)).ShouldThrow<Exception>();
+            logger.Invoking(x => x.AddLogger(null)).Should().Throw<Exception>();
         }
 
         #endregion
@@ -66,7 +66,7 @@ namespace Paradigm.Core.Tests.Logging
         public void ShouldntRemoveNullLoggers()
         {
             var logger = new CombineLogging();
-            logger.Invoking(x => x.RemoveLogger(null)).ShouldThrow<Exception>();
+            logger.Invoking(x => x.RemoveLogger(null)).Should().Throw<Exception>();
         }
 
         [TestMethod]
@@ -74,7 +74,7 @@ namespace Paradigm.Core.Tests.Logging
         {
             var logger = new CombineLogging();
             logger.AddLogger(new FileLogging());
-            logger.Invoking(x => x.RemoveLogger(new ConsoleLogging())).ShouldThrow<Exception>();
+            logger.Invoking(x => x.RemoveLogger(new ConsoleLogging())).Should().Throw<Exception>();
         }
 
         #endregion
@@ -92,7 +92,7 @@ namespace Paradigm.Core.Tests.Logging
         public void ShouldntSetMinimumLevelOfWrongType()
         {
             var logger = new CombineLogging();
-            logger.Invoking(x => x.SetMinimumLevel((LogType)10)).ShouldThrow<Exception>();
+            logger.Invoking(x => x.SetMinimumLevel((LogType)10)).Should().Throw<Exception>();
         }
 
         [TestMethod]
@@ -114,7 +114,7 @@ namespace Paradigm.Core.Tests.Logging
             logger.AddLogger(new FileLogging());
             logger.AddLogger(new ConsoleLogging());
 
-            logger.Invoking(x => x.SetMinimumLevel((LogType)10, true)).ShouldThrow<Exception>();
+            logger.Invoking(x => x.SetMinimumLevel((LogType)10, true)).Should().Throw<Exception>();
         }
 
         #endregion
@@ -132,14 +132,14 @@ namespace Paradigm.Core.Tests.Logging
         public void ShouldntSetAWrongTypeInCustomMessage()
         {
             var logger = new CombineLogging();
-            logger.Invoking(x => x.SetCustomMessage((LogType)10, "message")).ShouldThrow<Exception>();
+            logger.Invoking(x => x.SetCustomMessage((LogType)10, "message")).Should().Throw<Exception>();
         }
 
         [TestMethod]
         public void ShouldntSetANullMessage()
         {
             var logger = new CombineLogging();
-            logger.Invoking(x => x.SetCustomMessage(LogType.Critical, null)).ShouldThrow<Exception>();
+            logger.Invoking(x => x.SetCustomMessage(LogType.Critical, null)).Should().Throw<Exception>();
         }
 
         [TestMethod]
@@ -161,7 +161,7 @@ namespace Paradigm.Core.Tests.Logging
             logger.AddLogger(new FileLogging());
             logger.AddLogger(new ConsoleLogging());
 
-            logger.Invoking(x => x.SetCustomMessage((LogType)10, "message", true)).ShouldThrow<Exception>();
+            logger.Invoking(x => x.SetCustomMessage((LogType)10, "message", true)).Should().Throw<Exception>();
         }
 
         [TestMethod]
@@ -172,7 +172,7 @@ namespace Paradigm.Core.Tests.Logging
             logger.AddLogger(new FileLogging());
             logger.AddLogger(new ConsoleLogging());
 
-            logger.Invoking(x => x.SetCustomMessage(LogType.Critical, null, true)).ShouldThrow<Exception>();
+            logger.Invoking(x => x.SetCustomMessage(LogType.Critical, null, true)).Should().Throw<Exception>();
         }
 
         #endregion

@@ -17,6 +17,12 @@ Set of core libraries used by the paradigm framework in .net core.
 Change log
 ---
 
+Version `2.0.4`
+- Added logging configuration classes. Now it's possible to configure the log via the appsettings.json file.
+- Added logging extension methods.
+- Updated nuget dependencies.
+
+
 Version `2.0.3`
 - Added new member configuration method to mapping project to allow to setup the constructor of a mapping configuration.
   Without this ability, domain entities can not be created with a DI container.

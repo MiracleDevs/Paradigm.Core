@@ -34,7 +34,7 @@ namespace Paradigm.Core.Tests.Logging
         public void ShouldntSetMinimumLevelOfWrongType()
         {
             var logger = new FileLogging();
-            logger.Invoking(x => x.SetMinimumLevel((LogType)10)).ShouldThrow<Exception>();
+            logger.Invoking(x => x.SetMinimumLevel((LogType)10)).Should().Throw<Exception>();
         }
 
         #endregion
@@ -52,14 +52,14 @@ namespace Paradigm.Core.Tests.Logging
         public void ShouldntSetAWrongTypeInCustomMessage()
         {
             var logger = new FileLogging();
-            logger.Invoking(x => x.SetCustomMessage((LogType)10, "message")).ShouldThrow<Exception>();
+            logger.Invoking(x => x.SetCustomMessage((LogType)10, "message")).Should().Throw<Exception>();
         }
 
         [TestMethod]
         public void ShouldntSetANullMessage()
         {
             var logger = new FileLogging();
-            logger.Invoking(x => x.SetCustomMessage(LogType.Critical, null)).ShouldThrow<Exception>();
+            logger.Invoking(x => x.SetCustomMessage(LogType.Critical, null)).Should().Throw<Exception>();
         }
 
         #endregion
@@ -95,7 +95,7 @@ namespace Paradigm.Core.Tests.Logging
         public void ShouldntSetNullFileHeader()
         {
             var logger = new FileLogging();
-            logger.Invoking(x => x.SetFileHeader(null)).ShouldThrow<Exception>();
+            logger.Invoking(x => x.SetFileHeader(null)).Should().Throw<Exception>();
         }
 
         #endregion
@@ -113,7 +113,7 @@ namespace Paradigm.Core.Tests.Logging
         public void ShouldntSetNullFileName()
         {
             var logger = new FileLogging();
-            logger.Invoking(x => x.SetFileName(null)).ShouldThrow<Exception>();
+            logger.Invoking(x => x.SetFileName(null)).Should().Throw<Exception>();
         }
 
         #endregion

@@ -33,7 +33,7 @@ namespace Paradigm.Core.Tests.Logging
         public void ShouldntSetMinimumLevelOfWrongType()
         {
             var logger = new ConsoleLogging();
-            logger.Invoking(x => x.SetMinimumLevel((LogType)10)).ShouldThrow<Exception>();
+            logger.Invoking(x => x.SetMinimumLevel((LogType)10)).Should().Throw<Exception>();
         }
 
         #endregion
@@ -51,14 +51,14 @@ namespace Paradigm.Core.Tests.Logging
         public void ShouldntSetAWrongTypeInCustomMessage()
         {
             var logger = new ConsoleLogging();
-            logger.Invoking(x => x.SetCustomMessage((LogType)10, "message")).ShouldThrow<Exception>();
+            logger.Invoking(x => x.SetCustomMessage((LogType)10, "message")).Should().Throw<Exception>();
         }
 
         [TestMethod]
         public void ShouldntSetANullMessage()
         {
             var logger = new ConsoleLogging();
-            logger.Invoking(x => x.SetCustomMessage(LogType.Critical, null)).ShouldThrow<Exception>();
+            logger.Invoking(x => x.SetCustomMessage(LogType.Critical, null)).Should().Throw<Exception>();
         }
 
         #endregion
