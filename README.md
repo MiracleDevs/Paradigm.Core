@@ -17,6 +17,9 @@ Set of core libraries used by the paradigm framework in .net core.
 Change log
 ---
 
+Version `2.0.5`
+- Updated nuget packages.
+
 Version `2.0.4`
 - Added logging configuration classes. Now it's possible to configure the log via the appsettings.json file.
 - Added logging extension methods.
