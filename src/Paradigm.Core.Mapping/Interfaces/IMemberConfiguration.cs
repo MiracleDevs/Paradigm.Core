@@ -18,10 +18,10 @@ namespace Paradigm.Core.Mapping.Interfaces
     {
         IMemberConfiguration<TSource, TDestination> Ignore<TMember>(Expression<Func<TDestination, TMember>> destinationMember);
 
-        IMemberConfiguration<TSource, TDestination> Membmer<TMember>(Expression<Func<TDestination, TMember>> destinationMember, Expression<Func<TSource, TMember>> sourceMember);
+        IMemberConfiguration<TSource, TDestination> Member<TMember>(Expression<Func<TDestination, TMember>> destinationMember, Expression<Func<TSource, TMember>> sourceMember);
 
         IMemberConfiguration<TSource, TDestination> Function<TMember>(Expression<Func<TDestination, TMember>> destinationMember, Expression<Func<TSource, TMember>> sourceMember);
 
-        IMemberConfiguration<TSource, TDestination> ConstructUsing(Func<TSource, TDestination> constructor);
+        IMemberConfiguration<TSource, TDestination> ConstructUsing(Expression<Func<TSource, TDestination>> constructor);
     }
 }

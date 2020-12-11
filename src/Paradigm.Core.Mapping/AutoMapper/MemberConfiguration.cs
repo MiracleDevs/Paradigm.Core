@@ -26,7 +26,7 @@ namespace Paradigm.Core.Mapping.AutoMapper
             return this;
         }
 
-        public IMemberConfiguration<TSource, TDestination> Membmer<TMember>(Expression<Func<TDestination, TMember>> destinationMember, Expression<Func<TSource, TMember>> sourceMember)
+        public IMemberConfiguration<TSource, TDestination> Member<TMember>(Expression<Func<TDestination, TMember>> destinationMember, Expression<Func<TSource, TMember>> sourceMember)
         {
             this.Configuration.ForMember(destinationMember, x => x.MapFrom(sourceMember));
             return this;
@@ -38,7 +38,7 @@ namespace Paradigm.Core.Mapping.AutoMapper
             return this;
         }
 
-        public IMemberConfiguration<TSource, TDestination> ConstructUsing(Func<TSource, TDestination> constructor)
+        public IMemberConfiguration<TSource, TDestination> ConstructUsing(Expression<Func<TSource, TDestination>> constructor)
         {
             this.Configuration.ConstructUsing(constructor);
             return this;
