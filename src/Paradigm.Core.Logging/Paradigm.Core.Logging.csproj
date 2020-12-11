@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
+        <TargetFramework>netstandard2.1</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Copyright>Miracle Devs</Copyright>
         <PackageProjectUrl>http://www.miracledevs.com</PackageProjectUrl>
@@ -17,7 +17,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <None Include="icon.png" Pack="true" PackagePath=""/>
+        <None Include="icon.png" Pack="true" PackagePath="" />
     </ItemGroup>
 
 </Project>

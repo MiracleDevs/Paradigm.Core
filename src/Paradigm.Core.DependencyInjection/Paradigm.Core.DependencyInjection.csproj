@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
+        <TargetFramework>netstandard2.1</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Description>Wrapper around dependency injection libraries. The library allows to change DI containers without affecting the code.</Description>
         <Copyright>Miracle Devs</Copyright>
@@ -19,7 +19,7 @@
     <ItemGroup>
         <PackageReference Include="Autofac" Version="4.8.1" />
         <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
-        <None Include="icon.png" Pack="true" PackagePath=""/>
+        <None Include="icon.png" Pack="true" PackagePath="" />
     </ItemGroup>
 
 </Project>

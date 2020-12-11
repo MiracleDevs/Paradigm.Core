@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
+        <TargetFramework>netstandard2.1</TargetFramework>
         <Copyright>Miracle Devs</Copyright>
         <PackageProjectUrl>http://www.miracledevs.com</PackageProjectUrl>
         <Description>Framework wrapper around mapping libraries. The library allows to change mappers without affecting the code.</Description>
@@ -19,6 +19,6 @@
 
     <ItemGroup>
         <PackageReference Include="AutoMapper" Version="7.0.1" />
-        <None Include="icon.png" Pack="true" PackagePath=""/>
+        <None Include="icon.png" Pack="true" PackagePath="" />
     </ItemGroup>
 </Project>
