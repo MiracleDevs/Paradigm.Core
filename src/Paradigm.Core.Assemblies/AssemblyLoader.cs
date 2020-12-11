@@ -101,7 +101,7 @@ namespace Paradigm.Core.Assemblies
             {
                 try
                 {
-                    return assemblyLoadContext.LoadFromAssemblyPath(assemblyPath);
+                     return assemblyLoadContext.LoadFromAssemblyPath(assemblyPath);
                 }
                 catch
                 {

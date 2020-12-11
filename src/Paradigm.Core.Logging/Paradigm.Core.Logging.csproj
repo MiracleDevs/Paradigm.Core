@@ -1,19 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Copyright>Miracle Devs</Copyright>
-    <PackageProjectUrl>http://www.miracledevs.com</PackageProjectUrl>
-    <Description>This library helps with logging tasks.</Description>
-    <Authors>Miracle Devs</Authors>
-    <Company>Miracle Devs</Company>
-    <PackageLicenseUrl>https://github.com/MiracleDevs/Paradigm.Core/blob/master/LICENSE</PackageLicenseUrl>
-    <Product>Paradigm Framework</Product>
-    <RepositoryUrl>https://github.com/MiracleDevs/Paradigm.Core.git</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageIconUrl>https://avatars2.githubusercontent.com/u/8192926</PackageIconUrl>
-    <Version>2.0.5</Version>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Copyright>Miracle Devs</Copyright>
+        <PackageProjectUrl>http://www.miracledevs.com</PackageProjectUrl>
+        <Description>This library helps with logging tasks.</Description>
+        <Authors>Miracle Devs</Authors>
+        <Company>Miracle Devs</Company>
+        <License>MIT</License>
+        <Product>Paradigm Framework</Product>
+        <RepositoryUrl>https://github.com/MiracleDevs/Paradigm.Core.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageIcon>icon.png</PackageIcon>
+        <Version>2.1.0</Version>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="icon.png" Pack="true" PackagePath=""/>
+    </ItemGroup>
 
 </Project>
