@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/MiracleDevs/Paradigm.Core.svg?branch=master)](https://travis-ci.org/MiracleDevs/Paradigm.Core)
-
+[![Build Status](https://github.com/MiracleDevs/Paradigm.Core/workflows/Paradigm%20Core/badge.svg)](https://github.com/MiracleDevs/Paradigm.Core/actions)
 
 | Library | Nuget | Install
 |-|-|-|
