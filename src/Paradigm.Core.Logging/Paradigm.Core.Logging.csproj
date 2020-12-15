@@ -8,7 +8,7 @@
         <Description>This library helps with logging tasks.</Description>
         <Authors>Miracle Devs</Authors>
         <Company>Miracle Devs</Company>
-        <License>MIT</License>
+       <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <Product>Paradigm Framework</Product>
         <RepositoryUrl>https://github.com/MiracleDevs/Paradigm.Core.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
