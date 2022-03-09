@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/MiracleDevs/Paradigm.Core/workflows/Paradigm%20Core/badge.svg)](https://github.com/MiracleDevs/Paradigm.Core/actions)
+[![Build and test](https://github.com/MiracleDevs/Paradigm.Core/actions/workflows/dotnet-core.yml/badge.svg)](https://github.com/MiracleDevs/Paradigm.Core/actions/workflows/dotnet-core.yml)
 
 | Library | Nuget | Install
 |-|-|-|
