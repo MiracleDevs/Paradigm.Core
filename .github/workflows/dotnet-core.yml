@@ -11,15 +11,21 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    steps:
+   steps:
     - uses: actions/checkout@v2
-    - name: Setup .NET Core
+      with:
+        fetch-depth: 0
+
+    - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 6.0
+        dotnet-version: 6.0.x
+
     - name: Install dependencies
       run: dotnet restore ./src/Paradigm.Core.sln
+
     - name: Build
       run: dotnet build ./src/Paradigm.Core.sln --configuration Release --no-restore
+
     - name: Test
       run: dotnet test ./src/Paradigm.Core.sln --no-restore --verbosity normal
