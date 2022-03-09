@@ -2,11 +2,11 @@
 
 | Library | Nuget | Install
 |-|-|-|
-| Assemblies | [![NuGet](https://img.shields.io/nuget/v/Nuget.Core.svg)](https://www.nuget.org/packages/Paradigm.Core.Assemblies/) | `Install-Package Paradigm.Core.Assemblies`
-| Dependency Injection | [![NuGet](https://img.shields.io/nuget/v/Nuget.Core.svg)](https://www.nuget.org/packages/Paradigm.Core.DependencyInjection/) | `Install-Package Paradigm.Core.DependencyInjection`
-| Extensions | [![NuGet](https://img.shields.io/nuget/v/Nuget.Core.svg)](https://www.nuget.org/packages/Paradigm.Core.Extensions/)| `Install-Package Paradigm.Core.Extensions`
-| Logging | [![NuGet](https://img.shields.io/nuget/v/Nuget.Core.svg)](https://www.nuget.org/packages/Paradigm.Core.Logging/)| `Install-Package Paradigm.Core.Logging`
-| Mapping | [![NuGet](https://img.shields.io/nuget/v/Nuget.Core.svg)](https://www.nuget.org/packages/Paradigm.Core.Mapping/)| `Install-Package Paradigm.Core.Mapping`
+| Assemblies | [![NuGet](https://img.shields.io/nuget/v/Paradigm.Core.Assemblies.svg)](https://www.nuget.org/packages/Paradigm.Core.Assemblies/) | `Install-Package Paradigm.Core.Assemblies`
+| Dependency Injection | [![NuGet](https://img.shields.io/nuget/v/Paradigm.Core.DependencyInjection.svg)](https://www.nuget.org/packages/Paradigm.Core.DependencyInjection/) | `Install-Package Paradigm.Core.DependencyInjection`
+| Extensions | [![NuGet](https://img.shields.io/nuget/v/Paradigm.Core.Extensions.svg)](https://www.nuget.org/packages/Paradigm.Core.Extensions/)| `Install-Package Paradigm.Core.Extensions`
+| Logging | [![NuGet](https://img.shields.io/nuget/v/Paradigm.Core.Logging.svg)](https://www.nuget.org/packages/Paradigm.Core.Logging/)| `Install-Package Paradigm.Core.Logging`
+| Mapping | [![NuGet](https://img.shields.io/nuget/v/Paradigm.Core.Mapping.svg)](https://www.nuget.org/packages/Paradigm.Core.Mapping/)| `Install-Package Paradigm.Core.Mapping`
 
 
 
