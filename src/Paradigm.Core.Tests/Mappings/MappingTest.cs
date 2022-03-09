@@ -76,5 +76,20 @@ namespace Paradigm.Core.Tests.Mappings
             mappedObject.Id.Should().Be(simpleObject.Id);
             mappedObject.Name.Should().Be(simpleObject.Name);
         }
+
+        [TestMethod]
+        public void ShouldIgnoreMappings()
+        {
+            Mapper.Initialize(MapperLibrary.AutoMapper);
+            Mapper.Container.Register<SimpleMappingObject, SimpleMappingObject>().Ignore(x => x.Name);
+            Mapper.Compile();
+
+            var simpleObject = new SimpleMappingObject { Id = 1, Name = "Peter" };
+
+            var mappedObject = Mapper.Container.Map<SimpleMappingObject>(simpleObject);
+
+            mappedObject.Id.Should().Be(1);
+            mappedObject.Name.Should().Be(null);
+        }
     }
 }

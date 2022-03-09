@@ -16,6 +16,11 @@ Set of core libraries used by the paradigm framework in .net core.
 Change log
 ---
 
+Version `3.0.0`
+- Migrated project assemblies to .net6.0.
+- Updated nuget dependencies.
+- Added a test to check mapping ignore methods.
+
 Version `2.1.0`
 - Updated nuget project configuration.
 - Added new nuget icon.
